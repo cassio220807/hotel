@@ -31,6 +31,10 @@ export class Reserva{
     adpagamento (pagamento:Pagamento){
         this.pagamento = pagamento
     }
+    calcularpagamento(dias:number):number{
+        let n1 = dias * this.precototal
+        return n1
+    }
     exibirReserva(): string {
         return `
             Reserva de ${this.hospede.nome} (${this.hospede.cpf})

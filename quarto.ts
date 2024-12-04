@@ -7,7 +7,7 @@ export class Quarto{
     tipo: string
     precobase: number
     disponivel: boolean
-    categoriaquato: CategoriaQuartos
+    CategoriaQuartos: CategoriaQuartos
     descricao: string
     reservas: Reserva[]
     constructor(numero:string, tipo:string, precobase:number, disponivel:boolean, categoriaquarto:CategoriaQuartos, descricao:string){
@@ -15,9 +15,19 @@ export class Quarto{
         this.tipo = tipo
         this.precobase = precobase
         this.disponivel = disponivel
-        this.categoriaquato = categoriaquarto
+        this.CategoriaQuartos = categoriaquarto
         this.descricao = descricao
         this.reservas = []
+    }
+    exbirinfo():string{
+        return `
+        Numero: ${this.numero}
+        Tipo: ${this.tipo}
+        Preço Base: ${this.precobase}
+        Disponibilidade: ${this.disponivel}
+        Categoria Quarto: ${this.CategoriaQuartos.nome}
+        Descrição: ${this.descricao}
+        `
     }
     adreserva(reserva:Reserva){
         this.reservas.push(reserva)
