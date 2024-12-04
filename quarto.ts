@@ -5,25 +5,25 @@ import { CategoriaQuartos } from "./categoria";
 export class Quarto{
     numero: string
     tipo: string
-    precobase: number
+    precoBase: number
     disponivel: boolean
     CategoriaQuartos: CategoriaQuartos
     descricao: string
     reservas: Reserva[]
-    constructor(numero:string, tipo:string, precobase:number, disponivel:boolean, categoriaquarto:CategoriaQuartos, descricao:string){
+    constructor(numero:string, tipo:string, precoBase:number, disponivel:boolean, categoriaquarto:CategoriaQuartos, descricao:string){
         this.numero = numero
         this.tipo = tipo
-        this.precobase = precobase
+        this.precoBase = precoBase
         this.disponivel = disponivel
         this.CategoriaQuartos = categoriaquarto
         this.descricao = descricao
         this.reservas = []
     }
-    exbirinfo():string{
+    exibirInfo():string{
         return `
         Numero: ${this.numero}
         Tipo: ${this.tipo}
-        Preço Base: ${this.precobase}
+        Preço Base: ${this.precoBase}
         Disponibilidade: ${this.disponivel}
         Categoria Quarto: ${this.CategoriaQuartos.nome}
         Descrição: ${this.descricao}

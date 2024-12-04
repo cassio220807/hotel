@@ -28,7 +28,7 @@ export class Reserva{
     adservico (servico:Servico){
         this.servicos.push(servico)
     }
-    adpagamento (pagamento:Pagamento){
+    adPagamento (pagamento:Pagamento){
         this.pagamento = pagamento
     }
     calcularpagamento(dias:number):number{

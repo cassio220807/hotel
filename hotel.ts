@@ -23,19 +23,19 @@ export class Hotel{
         this.hospede = []
         this.funcionario = []
     }
-    adquarto(quarto:Quarto){
+    adQuarto(quarto:Quarto){
         this.quarto.push(quarto)
     }
     adservico (servico:Servico){
         this.servico.push(servico)
     }
-    adreserva(reserva:Reserva){
+    adReserva(reserva:Reserva){
         this.reserva.push(reserva)
     }
-    adhospede(hospede:Hospede){
+    adHospede(hospede:Hospede){
         this.hospede.push(hospede)
     }
-    adfuncionario(funcionario:Funcionario){
+    adFuncionario(funcionario:Funcionario){
         this.funcionario.push(funcionario)
     }
     exibirHotel(): string {
